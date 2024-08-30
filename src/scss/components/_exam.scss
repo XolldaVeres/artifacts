@@ -1,0 +1,64 @@
+.exam {
+  padding-top: 57px;
+  background: rgb(29, 47, 48);
+  padding-bottom: 60px;
+
+  &__container {}
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    grid-column: 5 span;
+    color: rgb(255, 255, 255);
+    font-family: var(--second-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  &__left {
+    grid-column: 9 span;
+  }
+
+  &__right {
+    padding: 16px 16px 24px 16px;
+    grid-column: 3 span;
+    background: rgb(186, 226, 73);
+  }
+
+  &__text {
+    margin-bottom: 75px;
+    color: rgb(80, 104, 41);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-flex;
+    color: rgb(11, 25, 25);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0%;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: white;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      right: -60px;
+      width: 50px;
+      height: 20px;
+      background: url(../img/Arrow1.png) no-repeat;
+    }
+  }
+
+}
